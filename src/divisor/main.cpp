@@ -1,14 +1,13 @@
 #include <iostream>
+#include "implementation.h"
+
 
 
 int main() {
-    int n = 0;
-    std::cin >> n;
-    //Implementation::Implementation* impl = Implementation::fibonacci_naive;
+    Implementation::Implementation* imp = Implementation::gcd_naive;
 
-
-    //std::cout << impl(n) << '\n';
-    //test_solution();
-    //std::cout << fibonacci_fast(n) << '\n';
+    int a, b;
+    std::cin >> a >> b;
+    std::cout << imp(a, b) << std::endl;
     return 0;
 }

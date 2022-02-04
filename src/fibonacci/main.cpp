@@ -18,21 +18,12 @@
 
 
 
-//void test_solution() {
-//    assert(fibonacci_fast(3) == 2);
-//    assert(fibonacci_fast(10) == 55);
-//    for (int n = 0; n < 20; ++n)
-//        assert(fibonacci_fast(n) == fibonacci_naive(n));
-//}
-
 int main() {
     int n = 0;
+    std::cout << "Write number: ";
     std::cin >> n;
     Implementation::Implementation* impl = Implementation::fibonacci_naive;
 
-
     std::cout << impl(n) << '\n';
-    //test_solution();
-    //std::cout << fibonacci_fast(n) << '\n';
     return 0;
 }

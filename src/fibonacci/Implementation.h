@@ -1,5 +1,6 @@
-
 #include <list>
+
+
 
 namespace Implementation
 {
@@ -12,8 +13,11 @@ namespace Implementation
         return fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
     }
 
+    
+    
+    std::list<unsigned int> fibonacciNumbers;
     int fibonacci_fast(int n) {
-        // write your code here
+        
 
         return 0;
     }
